@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+#hero {
+    background-color: #e2f0d9;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+#hero button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+#hero button:hover {
+    background-color: #45a049;
+}
+
+#about, #services, #benefits, #testimonials, #contact {
+    margin: 40px 0;
+}
+
+#services ul, #benefits ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+#testimonials article {
+    background-color: #e8f5e9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #4CAF50;
+}
+
+#testimonials article h3 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+#map {
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 40px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el header al hacer scroll */
+header.scrolled {
+    background-color: #388E3C;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Animaciones para las secciones */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para el botón "Volver Arriba" */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+.back-to-top.show {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #388E3C;
+}
+
+/* Animación para el botón al aparecer */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
